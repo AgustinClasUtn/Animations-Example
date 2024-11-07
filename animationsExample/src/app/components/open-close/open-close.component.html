@@ -1,0 +1,10 @@
+<div class="w-full h-full ">
+    <nav class="w-full flex justify-center">
+        <button type="button" class=" bg-white m-4 p-2 border-green-400 border-4 rounded-lg" [ngClass]="!isOpen ? 'border-blue-400' : 'border-green-400'" (click)="toggle()">
+            {{ isOpen ? 'Cerrar caja' : 'Abrir caja'}}
+        </button>
+    </nav>
+    <div [@openClose]="isOpen ? 'open' : 'closed' " class="flex bg-red-500 justify-center items-center text-white text-xl">
+        <p>La caja se encuentra {{ isOpen ? 'Abierta' : 'Cerrada' }}!</p>
+    </div>
+</div>

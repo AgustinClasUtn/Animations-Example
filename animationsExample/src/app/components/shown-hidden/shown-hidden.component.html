@@ -1,0 +1,10 @@
+<div class="w-full h-full p-1">
+    <div [@simpleFadeToggle]="isShown ? 'shown' : 'hidden'" class="bg-red-300 w-full h-full items-center flex justify-center">
+        <p class="text-3xl text-white">
+            Caja visible
+        </p>
+    </div>
+    <button (click)="toggle()" class="bg-red-400 w-full h-1/6 animate__animated animate__fadeInTopRight">
+        {{ isShown ? 'Replegar' : 'Desplegar' }}
+    </button>
+</div>
