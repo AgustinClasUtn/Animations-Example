@@ -22,10 +22,10 @@ import { CommonModule, NgClass } from '@angular/common';
         backgroundColor: 'red'
       })),
       transition('open => closed', [
-        animate('10s ease-out') // ,step-end
+        animate('1s ease-out') // ,step-end
       ],),
       transition('closed => open', [
-        animate('2s')
+        animate('10s')
       ]),
     ]),
   ],

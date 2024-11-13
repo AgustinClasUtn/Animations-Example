@@ -16,7 +16,5 @@ export class AnimationComponent {
   constructor(private router:Router){
   }
 
-  Navigate(){
-    this.router.navigate(["animationList"]);
-  }
+
 }

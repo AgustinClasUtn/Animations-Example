@@ -14,8 +14,8 @@ import { Router } from '@angular/router';
     trigger('listAnimation', [ 
       transition('* => *', [
         query(':enter', [
-          style({ opacity: 0, transform: 'translateY(-100px)', background: "red"}),
-          stagger('5s', [
+          style({ opacity: 0, transform: 'translateY(-100px)'}),
+          stagger('1s', [
             animate('1s', style({ opacity: 1, transform: 'translateY(0)'}))
           ])
         ], { optional: true }),
@@ -40,6 +40,7 @@ export class AnimationListComponent {
   }
 
   removeItem() {
+    this.items.pop();
     this.items.pop();
   }
 }

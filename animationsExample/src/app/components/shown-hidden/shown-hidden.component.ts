@@ -19,12 +19,6 @@ import { OpenCloseComponent } from '../open-close/open-close.component';
         opacity: 0,
         height: '0px'
       })),
-      transition('shown => hidden', [
-        animate('500ms')
-      ]),
-      transition('hidden => shown', [
-        animate('10s')
-      ])
     ])
   ]
 })
